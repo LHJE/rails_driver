@@ -21,6 +21,8 @@ gem 'figaro'
 group :development, :test do
   gem 'webdrivers'
   gem 'pry'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
 end
 
 group :test do
