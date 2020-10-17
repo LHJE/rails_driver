@@ -1,6 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe 'Spec Harness' do
+  # before(:each) do
+  #   10.times do
+  #     customers = create(:customers)
+  #     items = create(:items)
+  #     merchants = create(:merchants)
+  #     transactions = create(:transactions)
+  #   end
+  # end
+
   def conn(uri)
     url = ENV['RAILS_ENGINE_DOMAIN'] + uri
     Faraday.new(url)
